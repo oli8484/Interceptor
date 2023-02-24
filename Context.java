@@ -2,15 +2,18 @@
 import java.util.Objects;
 
 public class Context {
-    private Customer customer;
-    public Context(Customer customer) {
-        this.customer = Objects.requireNonNull(customer, "Customer cannot be null.");
+    private Movie movie;
+    public Context(Movie movie) {
+        this.movie = Objects.requireNonNull(movie, "Movie cannot be null.");
     }
     
-    public Customer getCustomer() {
-        return customer;
+    public Movie getCustomer() {
+        return movie;
     }
-    
+
+    public void setCustomer(Movie movie) {
+        this.movie = movie;
+    }
    
     
 }
