@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String[] args) {
         
-       Movie movie = new Movie("Titanic", 121212);
+       Movie movie = new Movie("Titanic", 0);
       
         
         Context context = new Context(movie);
