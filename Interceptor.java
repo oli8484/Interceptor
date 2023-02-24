@@ -1,4 +1,4 @@
 public interface Interceptor {
-    void interceptTitle(Context c);
-    void interceptCharge(Context c);
+    void interceptFrequentRenterPoints(Context c);
+    void interceptGetCharge(Context c);
 }
