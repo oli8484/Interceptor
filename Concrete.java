@@ -1,9 +1,9 @@
 
-public class Logger implements Interceptor {
+public class Concrete implements Interceptor {
 
     private Context context;
 
-    public Logger(Context m) {
+    public Concrete(Context m) {
         this.context = m;
     }
 
@@ -19,14 +19,14 @@ public class Logger implements Interceptor {
     public void interceptMovieTitle(Context m) {
 
         String title = m.getMovieName();
-        System.out.println("LOG: Movie Name: " + title);
+        System.out.println("Movie Name: " + title);
 
     }
 
     @Override
     public void interceptGetPriceCode(Context m) {
         int priceCode = m.GetPriceCode();
-        System.out.println("LOG: Movie Price Code: " + priceCode);
+        System.out.println("Movie Price Code: " + priceCode);
 
     }
 }

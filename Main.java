@@ -7,8 +7,8 @@ public class Main {
         
         Context context = new Context(movie);
         Dispatcher dispatcher = new Dispatcher();
-        Logger logger = new Logger(context);
-        dispatcher.attach(logger);
+        Concrete Concrete = new Concrete(context);
+        dispatcher.attach(Concrete);
 
       
        
