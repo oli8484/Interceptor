@@ -10,10 +10,11 @@ public class Dispatcher {
     }
 
     public void attach(Logger l) {
-        if (! interceptors.contains(l)) interceptors.add(l);
+        if (!interceptors.contains(l))
+            interceptors.add(l);
     }
 
-    public void detach(Logger l){
+    public void detach(Logger l) {
         interceptors.remove(l);
     }
 
@@ -25,14 +26,16 @@ public class Dispatcher {
         this.interceptors = interceptors;
     }
 
-    public void interceptFrequentRenterPoints(Context m){
-        for (Logger l: interceptors){
+    public void interceptMovieTitle(Context m) {
+        for (Logger l : interceptors) {
             l.interceptMovieTitle(m);
         }
     }
-    public void interceptGetCharge(Context m){
-        for(Logger l: interceptors){
-            l.interceptGetPriceCode(m);;
+
+    public void interceptGetPriceCode(Context m) {
+        for (Logger l : interceptors) {
+            l.interceptGetPriceCode(m);
+            ;
         }
     }
 }
