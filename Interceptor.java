@@ -1,4 +1,4 @@
 public interface Interceptor {
-    void interceptFrequentRenterPoints(Context m);
-    void interceptGetCharge(Context m);
+    void interceptMovieTitle(Context m);
+    void interceptGetPriceCode(Context m);
 }
