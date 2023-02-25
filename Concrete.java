@@ -20,7 +20,7 @@ public class Concrete implements Interceptor {
 
         String title = m.getMovieName();
 
-        // Example of modifying the movie title:
+        // modifying the movie title:
         if (title.startsWith("The ")) {
             String newTitle = title.replaceFirst("The ", "");
             m.setMovie(new Movie(newTitle, m.getMovie().getPriceCode()));
@@ -36,7 +36,7 @@ public class Concrete implements Interceptor {
 
         int priceCode = m.GetPriceCode();
 
-        // Example of modifying the price code:
+      // modifying the price code:
         if (priceCode == Movie.REGULAR) {
             m.setMovie(new Movie(m.getMovie().getTitle(), Movie.NEW_RELEASE));
             System.out.println("Price code intercepted and modified: " + Movie.NEW_RELEASE);
